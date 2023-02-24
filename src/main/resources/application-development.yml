@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: chapter-msa-webclient-restemplate
+
+external:
+  url:
+    web-service: ${URL_PARAMETER_ANALYSIS}
