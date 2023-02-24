@@ -1,7 +1,9 @@
 package com.pichincha.chapter.msa.webclient.restemplate.service.impl;
 
-import com.pichincha.chapter.msa.webclient.restemplate.helper.restapi.WebClientCall;
-import com.pichincha.chapter.msa.webclient.restemplate.service.WebClientService;
+import com.pichincha.chapter.msa.webclient.restemplate.helper.restapi.FeignCall;
+import com.pichincha.chapter.msa.webclient.restemplate.helper.restapi.RestTemplateCall;
+import com.pichincha.chapter.msa.webclient.restemplate.service.FeignService;
+import com.pichincha.chapter.msa.webclient.restemplate.service.RestTemplateService;
 import com.pichincha.chapter.msa.webclient.restemplate.service.dto.ResponseDto;
 import com.pichincha.chapter.msa.webclient.restemplate.service.dto.external.PersonDto;
 import lombok.RequiredArgsConstructor;
@@ -13,12 +15,12 @@ import java.util.List;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class WebClientServiceImpl implements WebClientService {
+public class FeignServiceImpl implements FeignService {
 
-    private final WebClientCall webClientCall;
+    private final FeignCall feignCall;
 
-    public List<ResponseDto> getWebClient() {
-        PersonDto persons = webClientCall.webClient();
+    public List<ResponseDto> getFeign() {
+        PersonDto persons = feignCall.getFeign();
         ResponseDto responseDto = new ResponseDto(persons.getName() + " from " + persons.getCity());
         return List.of(responseDto);
     }

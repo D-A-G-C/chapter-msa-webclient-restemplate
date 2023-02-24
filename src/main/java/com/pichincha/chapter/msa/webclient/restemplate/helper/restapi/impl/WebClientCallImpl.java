@@ -1,6 +1,6 @@
-package com.pichincha.chapter.msa.webclient.restemplate.helper.impl;
+package com.pichincha.chapter.msa.webclient.restemplate.helper.restapi.impl;
 
-import com.pichincha.chapter.msa.webclient.restemplate.helper.WebClientCall;
+import com.pichincha.chapter.msa.webclient.restemplate.helper.restapi.WebClientCall;
 import com.pichincha.chapter.msa.webclient.restemplate.service.dto.external.PersonDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +9,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
+import org.springframework.web.util.UriBuilder;
 
 @Slf4j
 @Service

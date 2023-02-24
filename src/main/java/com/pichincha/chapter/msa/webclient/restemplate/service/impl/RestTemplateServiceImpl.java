@@ -1,6 +1,6 @@
 package com.pichincha.chapter.msa.webclient.restemplate.service.impl;
 
-import com.pichincha.chapter.msa.webclient.restemplate.helper.RestTemplateCall;
+import com.pichincha.chapter.msa.webclient.restemplate.helper.restapi.RestTemplateCall;
 import com.pichincha.chapter.msa.webclient.restemplate.service.RestTemplateService;
 import com.pichincha.chapter.msa.webclient.restemplate.service.dto.ResponseDto;
 import com.pichincha.chapter.msa.webclient.restemplate.service.dto.external.PersonDto;

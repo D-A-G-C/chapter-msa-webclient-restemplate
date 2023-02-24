@@ -1,8 +1,8 @@
-package com.pichincha.chapter.msa.webclient.restemplate.helper.impl;
+package com.pichincha.chapter.msa.webclient.restemplate.helper.restapi.impl;
 
-import com.pichincha.chapter.msa.webclient.restemplate.helper.RestTemplateCall;
+import com.pichincha.chapter.msa.webclient.restemplate.helper.restapi.RestTemplateCall;
+import com.pichincha.chapter.msa.webclient.restemplate.service.dto.ResponseDto;
 import com.pichincha.chapter.msa.webclient.restemplate.service.dto.external.PersonDto;
-import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
