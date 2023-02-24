@@ -24,7 +24,7 @@ public class WebClientCallImpl implements WebClientCall {
     }
 
 
-    public org.springframework.web.reactive.function.client.WebClient setHeaders(String url) {
+    public WebClient setHeaders(String url) {
         return org.springframework.web.reactive.function.client.WebClient.builder()
                 .baseUrl(url)
                 .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
